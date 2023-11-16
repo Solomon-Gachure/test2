@@ -17,9 +17,7 @@ useEffect(()=>{
             <ul>
                 <li>{pop.data && pop.data.Population}</li>
                 <li>{pop.source && pop.source.name}</li>
-                
-
-
+           
             </ul>
         </div>
     </div>
