@@ -1,6 +1,7 @@
 import FetchData from "./components/FetchData";
 import Cats from "./components/cats";
 import Events from "./components/events";
+import Uspop from "./components/uspop";
 
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
       <FetchData/>
       <Cats/>
       <Events/>
+      <Uspop/>
     </div>
   );
 }
