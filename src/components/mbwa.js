@@ -9,7 +9,10 @@ useEffect(()=>{
 }, [])
   return (
     <div>
-        
+        <p>Dog pictures</p>
+        <div>
+            {mbwa.message}
+        </div>
     </div>
   )
 }
