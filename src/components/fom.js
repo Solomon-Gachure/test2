@@ -2,11 +2,17 @@ import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 const Fom = () => {
 const[fom,setFom]=useState({})
+const fetchdata= async ()=>{
+try {
+  const response= await axios.get('https://www.boredapi.com/api/activity')
+  setFom(response.data)
+} catch (error) {
+  console.log('error', error)
+}
+}
 useEffect(()=>{
-    axios.get('https://www.boredapi.com/api/activity')
-    .then(res => setFom(res.data))
-    .catch(err => console.log(err))
-})
+  fetchdata()
+}, [])
 
 
   return (
